@@ -32,11 +32,11 @@ def get_test_mc():
 
 @timeit
 def set_test_r():
-	r_server.set(rand(), 'test_value') #with the created redis object we can
+	r_server.hset("12345",rand(), 'test_value') #with the created redis object we can
 
 @timeit	
 def get_test_r():
-	r_server.get(rand())
+	r_server.hget("12345",rand())
 
 for i in range(0,1000):
 	set_test_mc()
