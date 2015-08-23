@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-
+#script modified from https://gist.github.com/mikeyk/1329319
 import redis
 import random
 import pylibmc
@@ -36,6 +36,8 @@ for i in range(0, NUM_ENTRIES):
     elif REDIS_HSET:
         bucket = int(i / 500)
         r.hset(bucket, i, value)
+
+#pipeline is good for non realtime app, dissabling for apple-to-apple comparison.
 '''
     if i % (NUM_ENTRIES/10) == 0:
         if REDIS_SETGET or REDIS_HSET:
