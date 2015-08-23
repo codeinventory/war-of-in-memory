@@ -27,7 +27,7 @@ user	0m30.420s
 sys	0m31.517s
 ```
 
-#results 
-on the performance, no one can beat the memcache, while redis is good at memory saving.
+#Results 
+on the performance, no one can beat the memcache, while redis-hash is good at memory saving, on the penalty of time.
 
 *"memory is inversely proportional to performance"* - *Amey*
