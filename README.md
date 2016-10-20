@@ -46,6 +46,16 @@ user	0m38.840s
 sys	0m36.448s
 ```
 
+### Infinispan
+```bash
+amey@xps ~/work/repo/war-of-in-memory $ time python infinyspan.py 
+
+real	4m13.909s
+user	1m32.968s
+sys	0m47.272s
+```
+
+
 #Results 
 on the performance, no one can beat the memcache, while redis-hash is good at memory saving, on the penalty of time.
 
